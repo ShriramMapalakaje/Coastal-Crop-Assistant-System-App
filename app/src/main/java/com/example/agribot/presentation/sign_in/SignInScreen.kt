@@ -1,5 +1,8 @@
 package com.example.agribot.presentation.sign_in
 
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -51,7 +54,13 @@ fun SignInScreen(
         contentAlignment = Alignment.Center
     ) {
         OutlinedButton(
-            onClick = onSignInClick,
+            onClick = {
+                if (isInternetAvailable(context)) {
+                    onSignInClick()
+                } else {
+                    Toast.makeText(context, "No internet connection", Toast.LENGTH_SHORT).show()
+                }
+            },
             shape = RoundedCornerShape(8.dp), // Rounded corners
             border = BorderStroke(1.dp, Color.Gray),
             modifier = Modifier
@@ -74,4 +83,12 @@ fun SignInScreen(
             }
         }
     }
+}
+
+fun isInternetAvailable(context: Context): Boolean {
+    val connectivityManager =
+        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    val network = connectivityManager.activeNetwork ?: return false
+    val capabilities = connectivityManager.getNetworkCapabilities(network) ?: return false
+    return capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
 }
