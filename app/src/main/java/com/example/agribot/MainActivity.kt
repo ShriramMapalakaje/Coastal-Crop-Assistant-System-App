@@ -22,7 +22,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.agribot.MainScreen.MainPage
+import com.example.agribot.mainScreen.MainPage
 import com.example.agribot.presentation.sign_in.GoogleAuthUIClient
 import com.example.agribot.presentation.sign_in.SignInScreen
 import com.example.agribot.presentation.sign_in.SignInViewModel

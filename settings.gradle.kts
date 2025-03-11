@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AgriBot"
+rootProject.name = "AgroBot"
 include(":app")
