@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "367891432195",
+    "project_id": "agribot-8015f",
+    "storage_bucket": "agribot-8015f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367891432195:android:b54c02987d2cca08f5df36",
+        "android_client_info": {
+          "package_name": "com.example.agribot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367891432195-j854p0qnor4k7a8qvqdct9d3blqvblii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agribot",
+            "certificate_hash": "0102b0e24a213d9505f0c01c89a0c2d12e7ad2b7"
+          }
+        },
+        {
+          "client_id": "367891432195-5ta653dbg6jd6h0rm3vch0pt353lu3se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkazokQwgmaG0a772a7aOznrQBnmhWniM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367891432195-5ta653dbg6jd6h0rm3vch0pt353lu3se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
